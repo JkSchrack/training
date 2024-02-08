@@ -1,0 +1,57 @@
+Network Protocols
+	Address Resolution Protocol (ARP) - Translatres IP addresses to MAC addresses
+	Domain Name System (DNS) - Translates domain name to IP address
+	Dynamic Host Confiuguration Protocol (DHCP) - Assigns IP addresses to endpoints (physical device that connects to a network)
+	File Transfer Protocol (FTP) - Client-server file transfer, used for private file sharing
+	Hyper-Text Transfer Protocol (HTTP) - File sharing over web-browser, HTTP connets to server and request web files (such as HTML)
+	Internet Protocol - (IP) - Sending/receiving of packets (data) to their destination
+		Packet - A unit of data consisting of a header and payload (Header contains routing information)
+	Transmission Control Protocol (TCP) - Assembles and organizes packets, error correction too
+
+IP Addresses
+	Public IP Address - External facing IP address used by device (router/modem/gateway) that connects to ISP
+	Private IP Address - Internal facing IP address, assigned by LAN network manager (router/modem/gateway) used by end-points. 
+	Static IP Address - Manually assigned IP address
+	Dynamic IP Address - DHCP assigned IP address
+
+	IP Address Structure
+		- IP addresses consists of 32 bits, 4 octects (8-bit sections); <section_1>.<section_2>.<section_3>.<section_4>
+		- IP addresses are made up of two portions, a network (network address) and host (specific device) portion
+
+	Subnet - Logical subdivision of an IP network
+		- Improves network performance, enhances network security, optimizes IP address utlization, facilitates network management
+	
+	Subnet Mask - Determines how many bits of an IP address correspond to for the network partition
+		- Subnet masks consist of 32 bits, with a sequence of 1s followed by a sequence of 0s
+		- Sequences of 1s indicate which bits of the IP address correspond to the network portion, 0s indicate which bits correspond to host portion
+			Subnet mask of 255.255.255.0 (aka 11111111.11111111.11111111.0) indicate the first 3 sections of the IP correspond to the network portion
+
+	Classless Inter-Domain Routing (CIDR) Notation - Compact way of indiciating a subnet
+		- '/x' after an IP address indicates X number of bits refer to network portion
+			192.168.100.0/24 means the first 24 bits correspond to network portion. Hence 192.168.100.0/24 == 192.168.100.0 255.255.255.0 == Network Portion = 192.168.100 && Host Portion = .0 
+
+	Subnet Classes
+		Class A (/8) - First 8 bits used for the network; Supports up to 16,777,214 hosts
+		Class B (/16) - First 16 bits used for the network; Supports up to 65,534 hosts
+		Class C (/24) - First 24 bits used for the network; Supports up to 254 hosts
+
+
+Reserved IP Addresses
+	0.0.0.0 - Local network
+	10.0.0.0 - Private network
+	127.0.0.0 - Loopback addresses (used by a computer to identify itself)
+	192.168.0.0 - Local communication within a private network
+	255.255.255.255 - Used to broadcast a message to every computer on a network 
+
+Reserved Ports
+	20 - FTP (data transfer)
+	21 - FTP (control command)
+	22 - SSH (secure logins/file transfers and port forwarding)
+	23 - Telnet (unencrypted text communication)
+	25 - SMTP (Simple Mail Transfer Protocol, email routing)
+	53 - DNS
+	69 - TFTP
+	80 - HTTP
+	156 - SQL Service
+	443 - HTTPS
+
