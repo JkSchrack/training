@@ -1,0 +1,40 @@
+Bubble Sort - O(n^2)
+	Usage - Never.
+
+	Parse from left to right
+		Compare elements in pairs
+			move larger to the right
+
+
+Selection Sort - O(n^2)
+    Usage - Good for validating array is already sorted; or when memory space is limited
+
+	Create new array in addition to original array
+	Parse from left to right in original array
+		Find the smallest element in original array
+			Transfer element to new array
+	return new array
+
+
+Insertion Sort - O(n^2)
+	Usage - Ideal for small problem size or nearly sorted data; Low overhead and adaptive
+
+	Parse from left to right
+		Compare selected element against left element until the left is equal or lesser
+			swap elements
+
+
+Merge Sort - O(nlog(n))
+	Usage - Best for linked-list sorting
+
+	Repeatedly cut array into half until 1 element in each subarray
+		Recursively sort and reassemble subarrays
+
+
+Quick Sort - O(nlog(n))
+	Usage - Best overall
+
+	Repeatedly cut array into halves based upon an element (pivot)
+		elements greater than the pivot go into one half, lesser thans go in the other
+			Do this recursively and things are sorted
+
