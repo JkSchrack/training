@@ -1,0 +1,29 @@
+ Big O Notation -> https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/
+  Big O Notation: Characterizes functions according to growth rates describes the performance or complexity of an algorithm
+  https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/
+    O (Big O): Upper Bound
+    Ω (Omega): Lower Bound
+    Θ (Theta): Exact Bound
+    o (Lil O): Upper Bound excluding Exact Bound
+  Time Complexity: Execution time for n inputs
+  Space Complexity: Amount of memory/space needed for n inputs
+    O(1) 'Constant': Same amount of executions regardless n number of inputs
+      Ex. First element of an Array
+    
+    O(log(n)) 'Logarithmic': Execution increases linearly while n increases exponentially
+      Ex. Divide and conquer algorithms like Binary Search
+    
+    O(n) 'Linear': Performance is proportional to the size of the input data set
+      Ex. For 0 to n
+    
+    O(nlog(n)) = O(log(n!) 'Linearithmic'/'Loglinear': Doing log(n) n number of times
+      Ex. Ideal Quick Sort log(n) partitions at n visits per level log(n) * n = nlog(n)
+    
+    O(n^2) 'Quadratic': Performance is directly proportional to the square size of the input data set
+      Ex. Nested For 0 to n
+    
+    O(2^n) 'Exponential': Growth doubles with each additional element in an input data set
+      Ex. Recursively find the nth number in the fibonacci sequence
+    
+    O(n!) 'Factorial':
+      Ex. Find all permutations (Order Matters)

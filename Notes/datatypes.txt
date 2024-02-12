@@ -1,0 +1,32 @@
+boolean - 1 byte - stores true/false
+char - 1 byte - stores a single character/letter/number/ascii value
+int - 2 or 4 bytes - stores whole number (no decimals)
+float - 4 bytes - stores fractional number (numbers with one or more decimal); up to 7 digits
+double - 8 bytes - a float but stores up to 15 digits
+
+Queue - (FIFO)First in First Out
+Stack - (LIFO)Last In First Out
+
+Pointers -> https://www.cplusplus.com/doc/tutorial/pointers/
+	Pointer: Variable that stores the address of another variable
+  	Address-of Operator(&): Obtains address of a variable
+  	Dereference Operator(*): Obtains value of a pointer
+    	Ex. variable = 7, pointer = &variable == 0xffffcbc0 (Memory Address), *pointer == 7
+ 
+Pass By Value vs Reference
+ 	Pass by Value: Caller and callee have two independent variables with the same value
+    	Ex. Caller: passByVal(val), Callee: passByVal(type val) {...}
+    	
+    Pass by Reference: Caller and the callee use the same variable for the parameter
+     	Ex. Caller: passByRef(&val), Callee: passByRef(type &val) {...}
+    
+    	Derivatives by Pass by Reference:
+    		Ex. Caller: passPtr(ptrName), Callee: passPtr(type *ptrName) {...}
+    		Ex. Caller: passRef(refName), Callee: passRef(type &refName) {...}
+    		Ex. Caller: passPtrArg(&varName), Callee: passPtrArg(type *ptrName) {...}
+  	
+  	Ex. Caller: passByPtr(*val), Callee: passByRef(type *val) {...}
+
+Linked List
+	Node - || <data> | <next> ||; Where next is a pointer to the next linked list
+	Header - First node in a chain of linked lists 
